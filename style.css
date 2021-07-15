@@ -9,38 +9,39 @@ html,body{
 }
 
 .container{
-
     display: flex ;
+    position: absolute;
     transform: translate(-50%,-50%);
+
 }
 
 .container-left{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(350px,auto);
+    grid-auto-rows: minmax(40vh,auto);
     grid-gap: 10px;
     width: 110%;
     height: 200vh; 
-    margin: 0 auto;
 }
 .container-mid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(350px,auto);
+    grid-auto-rows: minmax(40vh,auto);
     grid-gap: 10px;
     width: 100%;
     height: 200vh; 
-    margin: 0 auto;
+
 }
 
 .container-right{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(350px,auto);
+    grid-auto-rows: minmax(40vh,auto);
     grid-gap: 10px;
-    width: 100%;
+    width: 110%;
+
     height: 200vh; 
-    margin: 0 auto;
+
 }
 
 .block{
