@@ -10,11 +10,13 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <div class="container">
+    <div class="container" id="main">
         <div class="container-left">
 
             <div class="block block-1"></div>
@@ -70,7 +72,12 @@
         <div class="blockmid block-2"></div>
         <div class="blockmid block-3"></div>
         <div class="blocked block-10" id="mid">
-            Best things for everything
+            <div class="gPresent">
+                <img src="https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png" alt="">
+                <p>&nbsppresents:</p>
+            </div>
+            <p>Best things for</p> 
+            <p>everything</p>
         </div>
         <div class="blockmid block-3"></div>
 
@@ -138,14 +145,13 @@
         $(document).ready(function () {
             // Handler for .ready() called.
             $('html, body').animate({
+                
                 scrollTop: $('#mid').offset().top + 550,
                 scrollLeft : $('#mid').offset().left + 220
-            }, 'slow');
-
-        });
-        console.log($('#mid').offset().left)
-        document.getElementById('mid').focus();
-        var element = document.querySelector(".container");
+            }, 'slow')
+        })
+        
+        var element = document.querySelector(".container")
         panzoom(element, {
             minZoom: 1,
             maxZoom: 1
