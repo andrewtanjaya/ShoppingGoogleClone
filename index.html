@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Things - Google Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-left">
+
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+            <div class="block block-3"></div>
+            <div class="block block-4"></div>
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+            <div class="block block-7"></div>
+            <div class="block block-8"></div>
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+            <div class="block block-1"></div>
+            <div class="block block-8"></div>
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+            
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+            <div class="block block-1"></div>
+            <div class="block block-8"></div>
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+            <div class="block block-3"></div>
+            <div class="block block-4"></div>
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+            <div class="block block-7"></div>
+            <div class="block block-8"></div>
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+
+    </div>
+    <div class="container-mid">
+        <div class="blockmid block-1"></div>
+        <div class="blockmid block-2"></div>
+        <div class="blockmid block-1"></div>
+        <div class="blockmid block-2"></div>
+        <div class="blockmid block-3"></div>
+        <div class="blocked block-10" id="mid">
+            Best things for everything
+        </div>
+        <div class="blockmid block-3"></div>
+
+
+        <div class="blockmid block-5"></div>
+        <div class="blockmid block-6"></div>
+        <div class="blockmid block-7"></div>
+        <div class="blockmid block-8"></div>
+        <div class="blockmid block-1"></div>
+        <div class="blockmid block-2"></div>
+
+
+
+</div>
+    <div class="container-right">
+
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        <div class="block block-3"></div>
+        <div class="block block-4"></div>
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-7"></div>
+        <div class="block block-8"></div>
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-1"></div>
+        <div class="block block-8"></div>
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-1"></div>
+        <div class="block block-8"></div>
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        <div class="block block-3"></div>
+        <div class="block block-4"></div>
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-7"></div>
+        <div class="block block-8"></div>
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+
+</div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Handler for .ready() called.
+            $('html, body').animate({
+                scrollTop: $('#mid').offset().top + 550,
+                scrollLeft : $('#mid').offset().left + 220
+            }, 'slow');
+
+        });
+        console.log($('#mid').offset().left)
+        document.getElementById('mid').focus();
+        var element = document.querySelector(".container");
+        panzoom(element, {
+            minZoom: 1,
+            maxZoom: 1
+        })
+    </script>
+</body>
+</html>
